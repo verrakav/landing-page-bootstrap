@@ -1,54 +1,32 @@
-# React + TypeScript + Vite
+# This repo is part of styling-comparison experience exchange at liskov.dev
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Bootstrap** within a React application. The following are advantages, and disadvantages of using Bootstrap for styling.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Responsive design using Bootstrap's grid system.
+- Pre-styled components for faster development.
+- Example of integrating Bootstrap with React.
 
-## Expanding the ESLint configuration
+## Use Cases
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Rapid prototyping of web applications.
+- Consistent styling across different devices.
+- Simplifies responsive design implementation. (thanks to consistent use of 12 columns system)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Problems Solved by Bootstrap
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Reduces the need for custom CSS.
+- Provides a consistent design framework.
+- Speeds up development with pre-built components.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Disadvantages
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- Limited customization without overriding styles.
+- Can lead to bloated CSS if unused components are not removed.
+- Dependency on external libraries for styling.
+
+## Technologies Used
+
+- React (Vite)
+- Bootstrap
