@@ -1,7 +1,9 @@
 const NavBar = () => {
   return (
-    <nav>
-      <h2>CompanyName</h2>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <div className="container-fluid">
+        <h2 className="navbar-brand">Bootstrap</h2>
+      </div>
     </nav>
   );
 };
